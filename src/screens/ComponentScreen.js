@@ -3,9 +3,11 @@ import { Text ,View,  StyleSheet } from 'react-native';
 
 
 const ComponentScreen = () => {
+    const name = 'Superman';
     return (
     <View>
-        <Text style={styles.textStyle}>This is the ComponentScreen</Text> 
+        <Text style={styles.textStyle}>Getting Started with React native</Text> 
+        <Text style={styles.subHeader}>My Name is {name}</Text>
     </View>
     
     );
@@ -15,7 +17,10 @@ const ComponentScreen = () => {
 const styles = StyleSheet.create({
 
     textStyle: {
-        fontSize : 30
+        fontSize : 40
+    },
+    subHeader: {
+        fontSize: 25
     }
 });
 
